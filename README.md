@@ -14,6 +14,9 @@ Have fun! Make your own for yourselves and the kids!
 ### Nicotine Study
 Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
 
+### Sales Deck
+This is the sales deck we'd use to pitch Theranos to people around 2008.
+
 ### Other Stuff
 
 ## What's not included?
