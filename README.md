@@ -7,10 +7,10 @@ A bunch of stuff I found in an iCloud folder I had lost access to for years. See
 ### [Early version of the front-end code for the reader](https://github.com/jkmaxwell/theranos/tree/main/reader/Code%20Archive/UI)
 I never said I was a good engineer. 
 
-### Business Card Template
+### [Business Card Template](https://github.com/jkmaxwell/theranos/tree/main/business_card_template)
 Have fun! Make your own for yourselves and the kids!
 
-### Nicotine Study
+### [Nicotine Study](nicotine_study)
 Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
 
 ### Sales Deck
