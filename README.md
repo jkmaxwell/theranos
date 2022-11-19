@@ -19,6 +19,9 @@ This is the sales deck we'd use to pitch Theranos to people around 2008.
 ### [Craigslist Ad](https://github.com/jkmaxwell/theranos/blob/main/craigslist_ad/Theranos%20CL%20posting%202.pdf)
 The infamous Craigslist ad that got my friends in big trouble
 
+### [Industrial Design](https://github.com/jkmaxwell/theranos/tree/main/reader/industrial_design)
+Three sequential (refinement) presentations from FuseProject to Theranos for the reader design
+
 ### Other Stuff
 - Reader mockups
 - Wireframes
