@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<screens>
+	<screen type="intro" name="intro">
+		<content>
+			<text>intro</text>
+			<text>welcome</text>
+		</content>
+	</screen>
+	<screen type="main" class="center" name="start" action="begin">
+		<content>	
+			<button type="start" text="button.start" id="button-next" destination="id_clinician" transition="whiteout" disabled="false" />
+			<button type="flat" text="button.configuration" id="button-configuration" destination="configuration_password" transition="whiteout" disabled="false" />
+			<button type="flat" text="button.enrollment" id="button-enrollment" destination="enrollment_password" transition="whiteout" disabled="false" />
+			<button type="flat power" text="button.power.off" id="button-off" destination="power" transition="blackout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="id_clinician">
+		<content align="left" valign="top">	
+			<text>id.clinician</text>
+			<textinput name="id_clinician" />
+			<button type="next" text="button.next" id="button-next" destination="id_patient" transition="next" disabled="true" />				
+		</content>
+	</screen>
+	<screen name="id_patient">
+		<content align="left" valign="top">	
+			<text>id.patient</text>
+			<textinput name="id_patient" />
+			<button type="previous" text="button.back" id="button-previous" destination="id_clinician" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_pre-analysis" transition="whiteout" disabled="true" />				
+		</content>
+	</screen>
+	<screen name="test_pre-analysis" action="open_tray" background="true">
+		<content align="right" valign="middle" width="280">	
+			<text>test.insert_cartridge</text>
+			<button type="next" text="button.next" id="button-next" destination="test_analysis" transition="blackout" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_analysis" type="status" action="begin_assay">
+		<content align="center" valign="middle">	
+			<text>test.analysis</text>
+			<text>test.analysis.instruction</text>
+			<statusbar />
+			<!-- p>test.analysis.complete</p -->
+		</content>
+	</screen>
+	<screen name="test_eject" background="true">
+		<content align="left" valign="middle" width="280">	
+			<text>test.eject</text>
+			<button type="next" text="button.next" id="button-next" destination="test_dispose" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_dispose" action="open_tray" background="true">
+		<content align="left" valign="middle">	
+			<text>test.dispose_and_close</text>
+			<button type="next" text="button.next" id="button-next" destination="test_done" transition="blackout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_done" action="close_tray" type="status">
+		<content align="center" valign="middle">	
+			<text>test.goodbye</text>
+			<text>test.standby</text>
+		</content>
+	</screen>
+	<screen type="main" class="configuration" name="configuration_password">
+		<content align="left" valign="middle">	
+			<text>configuration.password</text>
+			<textinput name="configuration.password" />
+			<button type="next" text="button.next" id="button-next" destination="configuration_start" transition="whiteout" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="configuration" name="configuration_start">
+		<content align="left" valign="middle">	
+			<text>Configuration</text>
+		</content>
+	</screen>
+	<screen type="main" class="enrollment" name="enrollment_password">
+		<content align="left" valign="middle">	
+			<text>enrollment.password</text>
+			<textinput name="enrollment.password" />
+			<button type="next" text="button.next" id="button-next" destination="enrollment_start" transition="whiteout" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="enrollment" name="enrollment_start">
+		<content align="left" valign="middle">	
+			<text>Enrollment</text>
+		</content>
+	</screen>
+	<screen name="power" type="status">
+		<content align="center" valign="middle">	
+			<text>test.goodbye</text>
+			<text>test.standby</text>
+		</content>
+	</screen>
+</screens>

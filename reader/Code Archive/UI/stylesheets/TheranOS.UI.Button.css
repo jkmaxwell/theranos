@@ -1,0 +1,209 @@
+#buttons {
+	position: absolute;
+	top: 419px;
+	left: 0;
+	width: 584px;
+	height: 61px;
+	padding: 0 28px;
+}
+.button {
+	font: 100 36px/43px "Whitney Semibold", Whitney-Semibold;
+	letter-spacing: 0em;
+	outline: 0;
+	text-decoration: none;
+}
+a.button:hover,
+a.button:active { text-decoration: none; }
+a.button.next {
+	background: #fff url('../images/button_bottom_next_green.png') no-repeat top right;
+	color: rgb(64,128,0);
+	display: block;
+	height: 46px;
+	float: right;
+	padding: 0 48px 0 0;
+	font-size: 18px;
+}
+a.button.next span {
+	background: inherit;
+	background-position: top left;
+    padding: 12px 0px 14px 17px;
+}
+a.button.next:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom right;
+}
+a.button.next:active span {
+	background-position: bottom left;
+    padding: 12px 0px 12px 17px;
+}
+.button.previous {
+	background: #fff url('../images/button_bottom_previous_gray.png') no-repeat top left;
+	color: rgb(128,128,128);
+	display: block;
+	height: 46px;
+	float: left;
+	padding: 0 0 0 48px;
+	font-size: 18px;
+	position: absolute;
+}
+.button.previous span {
+	background: inherit;
+	background-position: top right;
+    padding: 12px 17px 14px 0px;
+}
+a.button.previous:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom left;
+}
+a.button.previous:active span {
+	background-position: bottom right;
+    padding: 12px 17px 12px 0px;
+}
+.button.error {
+	background: #fff url('../images/button_error.png') no-repeat top left;
+	color: black;
+	display: block;
+	height: 48px;
+	float: left;
+	padding: 20px 0 0 18px;
+	font-size: 18px;
+}
+.button.error span {
+	background: inherit;
+	background-position: top right;
+    padding: 12px 17px 14px 0px;
+}
+a.button.error:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom left;
+}
+a.button.error:active span {
+	background-position: bottom right;
+    padding: 12px 17px 12px 0px;
+}
+#button-restart {
+	background-image: url('../images/button_error_restart.png');
+}
+#button-restart span {
+	background: inherit;
+	background-position: top right;
+    padding: 12px 56px 14px 0px;
+}
+a.button.flat {
+	background: #fff url('../images/button_bottom_white.png') no-repeat top right;
+	color: rgb(128,128,128);
+	display: block;
+	height: 40px;
+	float: left;
+	margin-right: 30px;
+	padding: 0 16px 0 0px;
+	font-size: 18px;
+}
+a.button.flat span {
+	background: inherit;
+	background-position: top left;
+	display: block;
+	line-height: 14px;
+    padding: 12px 0 14px 16px;
+}
+a.button.flat:active {
+	background-position: bottom right;
+}
+a.button.flat:active span {
+	background-position: bottom left;
+}
+a.button.flat.power {
+	float: right;
+	margin-right: 0;
+	padding: 0 49px 0 0px;
+	color: rgb(190,38,17);
+}
+a.button.start,
+a.button.green,
+a.button.white {
+	background: #fff url('../images/button_big_green.png') no-repeat top right;
+	color: rgb(64,128,0);
+	display: block;
+	float: left;
+	height: 90px;
+	padding: 0 92px 0 0;
+	left: 131px;
+	top: 171px;
+	position: relative;
+}
+a.button.start span,
+a.button.green span,
+a.button.white span {
+	background: inherit;
+	background-position: top left;
+	display: block;
+    padding: 20px 0 28px 30px;
+}
+a.button.start:active,
+a.button.green:active,
+a.button.white:active {
+	height: 88px;
+	padding-top: 1px;
+	background-position: bottom right;
+}
+a.button.start:active span,
+a.button.green:active span,
+a.button.white:active span {
+	background-position: bottom left;
+    padding: 20px 0 25px 30px;
+}
+a.button.green {
+	float: right;
+	padding: 0 28px 0 0;
+	left: 0;
+	top: 0;
+	position: relative;
+}
+a.button.white {
+	background-image: url('../images/button_big_white.png');
+	color: rgb(128,128,128);
+	float: left;
+	left: 0;
+	top: 0;
+	position: relative;
+}
+a.button.gray {
+	background: #fff url('../images/button_bottom_previous_gray.png') no-repeat top left;
+	color: rgb(128,128,128);
+	display: block;
+	height: 46px;
+	float: right;
+	padding: 0 0 0 16px;
+	font-size: 18px;
+}
+a.button.gray span {
+	background: inherit;
+	background-position: top right;
+    padding: 11px 17px 14px 0px;
+}
+a.button.gray:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom left;
+}
+a.button.gray:active span {
+	background-position: bottom right;
+    padding: 11px 17px 12px 0px;
+}
+a.button.big {
+	background: #fff url('../images/button_big_green_circle.png') no-repeat top left;
+	display: block;
+	height: 100px;
+	width: 100px;
+	float: right;
+	top: 25px;
+	position: relative;
+}
+a.button.big:active {
+	background-position: bottom left;
+}
+
+a.button.disabled { opacity: 0.1; }

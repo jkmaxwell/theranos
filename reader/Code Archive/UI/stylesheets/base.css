@@ -1,0 +1,354 @@
+/* 
+** RESET!
+*/ 
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0; padding: 0; }
+img,fieldset { border: none; }
+ul,ol { list-style: none; }
+label { cursor: pointer; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,abbr { font-size: 1em; font-weight: normal; font-style: normal; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*
+** FUNCTIONAL 
+*/
+.clear { clear: both; }
+.clearer { clear: both; display: block; margin: 0; padding: 0; height: 0; line-height: 1px; font-size: 1px; }
+
+div.positioner {
+	position: absolute;
+	width: 580px;
+}
+
+/*
+**	TYPOGRAPHY
+*/
+html {
+	height:480px;
+	overflow:hidden;
+	width:640px;
+}
+body {
+	background: #fff url() no-repeat top left;
+	color: #000;
+	font: 100 36px/43px "Whitney Medium", Whitney-Medium;
+/*	letter-spacing: -0.001em;*/
+	height: 420px;
+}
+
+a {
+	color: #007341;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+em {
+	font-weight: normal;
+	color: rgb(0,178,0);
+}
+
+body.survey em {
+	color: #000;
+	font-family: Whitney-Bold;
+}
+
+
+
+#textcontainer {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	height: 420px;
+}
+p + p {
+	margin-top: 43px;
+}
+#textcontainer.middle {
+	display: table;
+	vertical-align: middle;
+}
+#textcontainer.middle p {
+	display: table-cell; vertical-align: middle
+}
+
+span.red {color: #d00;}
+/*
+** SMILEYS
+*/
+.smileys {
+	height: 36px;
+	position: relative;
+	background: #fff url('../images/survey_feel_connectors.png') no-repeat center 58px;
+	top: 30px;
+	padding-bottom: 85px;
+}
+.smileys label {
+/*	background: #fff url('../images/survey_feel_connector.png') no-repeat top center; */
+	display: inline;
+	font-family: "Whitney Semibold", Whitney-Semibold;
+	position: absolute;
+	top: 74px;
+}
+a.smiley {
+	display: block;
+	width: 63px;
+	height: 63px;
+	position: absolute;
+	z-index: 20;
+	text-decoration: none;
+	left: 20px;
+}
+a.smiley.selected {
+	background: transparent url('../images/survey_feel_smileys_selected.png') no-repeat top left;
+}
+a.smiley span {
+	background: #fff url('../images/survey_feel_smileys.png') no-repeat top left;
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: -10;
+}
+
+/*
+** PAGE
+*/
+
+.page {
+	color: #000;
+	background-color: #fff;
+	width: 580px;
+	height: 420px;
+	top: 0;
+	left: 0;
+	padding: 30px;
+	position: absolute;
+}
+
+.page.horizontal-center {text-align: center;}
+.page.horizontal-right {text-align: right;}
+.page.vertical-middle {display: table-cell;}
+.page.vertical-bottom {display: table-cell;}
+/*
+** PAGE : INTRO
+*/
+
+.page.intro { font: 48px/60px "Whitney Book", Whitney-Book;}
+
+.page.intro p {
+	display: block;
+	opacity: 1.0;
+}
+
+.page.intro p em {
+	color: #000;
+	font-family: "Whitney Semibold", Whitney-Semibold;
+	font-style: italic;
+}
+
+/*
+** PAGE : STATUS & ERROR
+*/
+.page.status {
+	background-color: #000;
+	color: #fff;
+}
+.page.error {
+	background: #fff url('../images/error.png') no-repeat top left;
+}
+.page.status p,
+.page.error p {
+	font-size: 18px;
+	letter-spacing: 0;
+	line-height: 24px;
+	margin-left: 31px;
+	text-align: center;
+	width: 390px;
+}
+.page.status p + p,
+.page.status div.statusBar + p,
+.page.error p + p {
+	margin-top: 20px;
+}
+.page.status .statusBox,
+.page.error .errorBox {
+	margin: 20px auto 0;
+	text-align: center;
+	width: 466px;
+}
+.page.status .statusBox.opaque {
+	opacity: 0.75;
+}
+.page.status .statusBox-top {
+	height: 16px;
+	width: 466px;
+	background: transparent url('../images/status_dialog_top.png') no-repeat top center;
+}
+.page.status .statusBox-middle {
+	background: transparent url('../images/status_dialog_middle.png') repeat-y center center;
+	padding: 20px 0;
+	width: 466px;
+}
+.page.status .statusBox-bottom {
+	background: transparent url('../images/status_dialog_bottom.png') no-repeat bottom center;
+	height: 21px;
+	width: 466px;
+}
+.page.error .errorBox-top {
+	height: 16px;
+	width: 466px;
+	background: transparent url('../images/error_dialog_top.png') no-repeat top center;
+}
+.page.error .errorBox-middle {
+	background: transparent url('../images/error_dialog_middle.png') repeat-y center center;
+	padding: 20px 0;
+	width: 466px;
+}
+.page.error .errorBox-bottom {
+	background: transparent url('../images/error_dialog_bottom.png') no-repeat bottom center;
+	height: 21px;
+	width: 466px;
+}
+.page.status div.statusBar {
+	background: #000 url('../images/status_bar_off.gif') no-repeat top left;
+	height: 21px;
+	margin: 30px auto 0;
+	text-align: left;
+	width: 280px;
+}
+.page.status div.statusBar div { /* status bar fill */
+	background: #000 url('../images/status_bar_on.gif') no-repeat top left;
+	height: 21px;
+	width: 0px; /* max width 280px -- starts out at 0 */
+}
+
+.errorBox-buttons {
+	text-align: center;
+}
+/*
+** PAGE : LANDSCAPE
+*/
+.page.landscape p {
+	color: #fff;
+	font-size: 30px;
+	line-height: 36px;
+}
+.page.landscape p.sub {
+	font-size: 18px;
+	margin-top: 0px;
+}
+/*
+** PAGE : MAIN
+*/
+.page.main p em {
+	color: #000;
+	font-family: "Whitney Bold", Whitney-Bold;
+}
+
+p.sub {
+	color:gray;
+	font-size:24px;
+	line-height:24px;
+	margin-bottom:0pt;
+	margin-top:12px;
+}
+p.small {
+	font-size:30px;
+	line-height:36px;
+}
+p.small + p.small {
+	margin-top: 36px;
+}
+p.test_walkthrough_9_3 {
+	width: 280px;
+}
+/* 
+** PAGE : COLUMNS
+**/
+.columns-2 {width: 100%;}
+div.column {float: left; margin-right: 30px;}
+
+/*
+** TRANSITIONS : WHITEOUT / BLACKOUT
+*/
+div.whiteout,
+div.blackout {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 640px;
+	height: 480px;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.0;
+}
+div.blackout { background-color: black; }
+
+/*
+** SURVEY : INCREASING
+*/ 
+.survey.increasing {
+	background-image: url(../images/survey_increasing.png);
+}
+
+
+
+/*
+** SURVEY : RADIO BUTTONS
+*/
+label {
+	display: block;
+	clear: both;
+	font-size: 26px;
+	margin-top: 16px;
+}
+label em {
+	color: #000;
+	font-family: "Whitney Bold", Whitney-Bold;
+}
+div.radio,
+div.checkbox {
+	background: transparent url(../images/radio_transparent.png) no-repeat left -45px;
+	float: left;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	line-height: 0%;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+div.checked { background-position: left top; }
+
+/*
+** SURVEY : TIME
+*/ 
+.survey.time {
+	
+}
+
+.survey.time div.radio {
+	background: transparent url(../images/radio_time1.png) no-repeat left top;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 72px;
+	height: 72px;
+}
+.survey.time div.checked { background-position: left bottom; }
+.survey.time label {
+	clear: none;
+	float: left;
+	font: 24px/28px "Whitney Semibold", Whitney-Semibold;
+	margin-top: 80px;
+	text-align: center;
+}
+.survey.time label span.units {
+	clear: both;
+	color: #808080;
+	display: block;
+	font: 18px/14px "Whitney SemiboldSC", Whitney-SemiboldSC;
+}

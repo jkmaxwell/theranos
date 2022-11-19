@@ -1,0 +1,117 @@
+.tui-entry-field {
+		background: #fff url(/images/input_textfield.gif) no-repeat left top;
+		border: none;
+		margin: 40px 0px;
+		width: 556px;
+		height: 65px;
+		padding: 7px 12px 0px;
+		font-family: Courier, "Courier New";
+		font-size: 58px;
+		color: rgb(64,128,0);
+}
+
+.tui-container {
+	visibility: hidden;
+	position: absolute;
+	height: 240px;
+	top: 220px;
+	left: 0;
+	width: 634px;
+	background: #fff;
+	padding: 3px;
+	font-family: "Whitney Medium", Whitney-Medium;
+}
+
+.tui-row {	
+	display: block;
+	position: relative;
+	height: 49px;
+	width: 620px;	
+}
+
+.tui-row-1 { left: 16px; }
+.tui-row-2 { left: 66px; }
+.tui-row-3 { left: 92px; }
+.tui-row-4 { left: 142px; }
+.tui-row-5 { left: 166px; width: 300px; }
+
+.tui-key, .close {
+	background: transparent url('/images/button_bottom_previous_gray.png') no-repeat top left;
+	float: left;
+	min-width: 50px;
+	margin-right: 0px;
+}
+.tui-key span, .close span {
+	background: transparent url('/images/button_bottom_previous_gray.png') no-repeat top right;
+	display: block;
+	padding-top: 15px;
+	padding-right: 16px;
+	margin-left: 15px;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+	cursor: pointer;
+	font-size:20px;
+	line-height:10px;
+}
+
+.tui-special-key {
+	width: 100px;
+}
+
+.tui-spacebar-key {
+	width: 300px;
+}
+
+.close {
+	position: absolute;
+	bottom: 2px;
+	right: 16px;
+	padding-top: 15px;
+	text-align: center;
+	font-weight: bold;
+	width: 61px;
+	height: 45px;
+	margin-right: 3px;
+	cursor: pointer;
+	line-height:10px;
+	font: 100 36px/43px "Whitney Medium", Whitney-Medium;
+	letter-spacing: 0em;
+	
+	background-image: url('../images/button_bottom_next_green.png');
+	background-position:right top;
+	color: rgb(64,128,0);
+	padding: 0 48px 0 0;
+	font-size: 18px;	
+}
+.close span {
+	background-image:url(../images/button_bottom_next_green.png);
+	background-position:left top;
+	display:block;
+	margin:0pt;
+	padding-left:16px;
+	padding-right:0pt;
+}
+
+
+/* These are the animation stages, you could even set BG images here, etc */
+.a-state-1 { background: #000; color: white; }
+.a-state-2 { background: #222; color: white; }
+.a-state-3 { background: #444; color: white; }
+.a-state-4 { background: #666; color: #ccc; }
+.a-state-5 { background: #888; color: #ccc; }
+.a-state-6 { background: #aaa; color: #ccc; }
+.a-state-7 { background: #bbb; color: #ccc; }
+.a-state-8 { background: #ccc color: black; }
+.a-state-9 { background: #ddd color: black; }
+.a-state-10 { background: white; color: black; } /* be sure to return the key to its original state here! */
+
+
+
+
+
+
+
+
+
+

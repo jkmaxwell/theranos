@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<screens>
+	<screen type="intro" name="intro" action="get_config">
+		<content>
+			<text>intro</text>
+			<text>welcome</text>
+		</content>
+	</screen>
+	<screen type="main" class="center" name="start" action="system_status">
+		<content>	
+			<button type="start" text="button.start" id="button-next" destination="test_walkthrough_0" transition="whiteout" disabled="false" />
+			<button type="flat power" text="button.power.off" id="button-off" destination="power" transition="blackout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_0" background="true" action="begin">
+		<content align="left" valign="top">	
+			<text>test.walkthrough.wait</text>
+			<button type="next" text="button.next" id="button-next" destination="survey1" transition="next" disabled="false" />				
+		</content>
+	</screen>	
+	<screen type="main" class="survey" name="survey1">
+		<content align="left" valign="middle">	
+			<text>survey.feelingtoday.question</text>
+			<survey type="feel" name="survey1" />
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_0" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="survey2" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey2">
+		<content align="left" valign="top">	
+			<text>survey.activities.question</text>
+			<survey type="one" name="survey2">
+				<option>survey.activities.answer.1</option>
+				<option>survey.activities.answer.2</option>
+				<option>survey.activities.answer.3</option>
+			</survey>
+			<button type="previous" text="button.back" id="button-previous" destination="survey1" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="survey3" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey3">
+		<content align="left" valign="top">	
+			<text>survey.appetite.question</text>
+			<survey type="one" name="survey3">
+				<option>survey.appetite.answer.1</option>
+				<option>survey.appetite.answer.2</option>
+				<option>survey.appetite.answer.3</option>
+				<option>survey.appetite.answer.4</option>
+				<option>survey.appetite.answer.5</option>
+			</survey>
+			<button type="previous" text="button.back" id="button-previous" destination="survey2" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="survey4" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey4">
+		<content align="left" valign="top">	
+			<text>survey.symptoms.question</text>
+			<text class="sub">survey.symptoms.question.subtext</text>
+			<survey type="many" name="survey4" columns="2">
+				<option>survey.symptoms.answer.1</option>
+				<option>survey.symptoms.answer.2</option>
+				<option>survey.symptoms.answer.3</option>
+				<option>survey.symptoms.answer.4</option>
+				<option>survey.symptoms.answer.5</option>
+				<option>survey.symptoms.answer.6</option>
+				<option>survey.symptoms.answer.7</option>
+				<option>survey.symptoms.answer.8</option>
+			</survey>
+			<button type="previous" text="button.back" id="button-previous" destination="survey3" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_start" transition="next" disabled="false" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="test_start">
+		<content align="left" valign="middle">	
+			<text>test.start</text>
+			<button type="big" text="" id="button-next" destination="test_pre-analysis" transition="whiteout" disabled="false" />
+			<button type="gray" text="button.walkthrough" id="button-help" destination="test_walkthrough_1" transition="whiteout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_1" background="true">
+		<content align="left" valign="middle" width="280">	
+			<text>test.walkthrough.sealed_pouch</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_start" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_2" transition="next" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_2" background="true">
+		<content>	
+			<text>test.walkthrough.preparation</text>
+			<ul>
+				<li>test.walkthrough.preparation.materials.lancet</li>
+				<li>test.walkthrough.preparation.materials.swab</li>
+				<li>test.walkthrough.preparation.materials.cartridge</li>
+				<li>test.walkthrough.preparation.materials.transfer_pen</li>
+				<li>test.walkthrough.preparation.materials.gauze</li>
+			</ul>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_1" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_3" transition="next" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_3" background="true">
+		<content align="left" valign="middle" width="430">	
+			<text>test.walkthrough.water</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_2" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_5" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_5" background="true">
+		<content align="left" valign="middle" width="240">	
+			<text>test.walkthrough.sterilization</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_3" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_6" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_6" background="true">
+		<content align="left" valign="middle" width="320">	
+			<text>test.walkthrough.twist</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_5" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_7" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_7" background="true">
+		<content align="left" valign="middle" width="313">	
+			<text>test.walkthrough.prick</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_6" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_8" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_8" background="true">
+		<content align="left" valign="middle">	
+			<text>test.walkthrough.drop</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_7" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_9" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_9" background="true">
+		<content align="left" valign="top">	
+			<text class="small">test.walkthrough.capillary</text>
+			<text class="small">test.walkthrough.flat</text>
+			<text class="small test_walkthrough_9_3">test.walkthrough.full</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_8" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_10" transition="next" disabled="false" />				
+		</content>
+	</screen>	
+	<screen name="test_walkthrough_10" background="true">
+		<content align="left" valign="middle" width="300">	
+			<text>test.walkthrough.transfer</text>
+			<text>test.walkthrough.plunge</text>
+			<button type="previous" text="button.back" id="button-previous" destination="test_walkthrough_9" transition="previous" disabled="false" />
+			<button type="next" text="button.next" id="button-next" destination="test_walkthrough_11" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_11" action="open_tray" background="true">
+		<content align="right" valign="middle" width="270">	
+			<text>test.walkthrough.insert_cartridge</text>
+			<button type="next" text="button.next" id="button-next" destination="test_analysis" transition="blackout" disabled="true" />				
+		</content>
+	</screen>
+	<screen name="test_pre-analysis" action="open_tray" background="true">
+		<content align="right" valign="bottom">	
+			<text>test.insert_cartridge</text>
+			<button type="next" text="button.next" id="button-next" destination="test_analysis" transition="blackout" disabled="true" />				
+		</content>
+	</screen>
+	<screen name="test_analysis" type="status" action="begin_assay">
+		<content align="center" valign="middle">	
+			<text>test.analysis</text>
+			<text>test.analysis.instruction</text>
+			<statusbar />
+			<!-- p>test.analysis.complete</p -->
+		</content>
+	</screen>
+	<screen name="test_eject" background="true" action="post_data">
+		<content align="left" valign="middle" width="280">	
+			<text>test.eject</text>
+			<button type="next" text="button.eject" id="button-next" destination="test_dispose" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_dispose" action="open_tray" background="true">
+		<content align="left" valign="middle">	
+			<text>test.clean</text>
+			<text>test.dispose</text>
+			<text>test.close</text>
+			<button type="next" text="button.close_tray" id="button-next" destination="test_done" transition="blackout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_done" action="close_tray" type="landscape">
+		<content align="center" valign="middle">	
+			<text>test.goodbye</text>
+			<text>test.standby</text>
+		</content>
+	</screen>
+	<screen type="main" class="configuration" name="configuration_password">
+		<content align="left" valign="top">	
+			<text>configuration.password</text>
+			<textinput name="configuration.password" />
+			<button type="next" text="button.next" id="button-next" destination="configuration_start" transition="whiteout" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="configuration" name="configuration_start">
+		<content align="left" valign="top">	
+			<text>Configuration</text>
+		</content>
+	</screen>
+	<screen type="main" class="enrollment" name="enrollment_password">
+		<content align="left" valign="top">	
+			<text>enrollment.password</text>
+			<textinput name="enrollment.password" />
+			<button type="next" text="button.next" id="button-next" destination="enrollment_start" transition="whiteout" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="enrollment" name="enrollment_start">
+		<content align="left" valign="top">	
+			<text>Enrollment</text>
+		</content>
+	</screen>
+	<screen name="power" type="landscape" action="shutdown" background="true">
+		<content align="left" valign="bottom">	
+			<text>test.goodbye</text>
+			<text class="sub">test.standby</text>
+		</content>
+	</screen>
+	<screen name="restart" type="landscape" action="restart" background="true">
+		<content align="left" valign="bottom">	
+			<text>test.restart</text>
+			<text class="sub">test.restarting</text>
+		</content>
+	</screen>
+	<screen name="warming" type="landscape" background="true" action="system_status">
+		<content align="left" valign="bottom">	
+			<text>warming.message</text>
+			<text class="sub">warming.time</text>
+		</content>
+	</screen>
+	<screen name="waiting" type="landscape" background="true" action="begin">
+		<content align="left" valign="bottom">	
+			<text>waiting.message</text>
+			<text class="sub">waiting.time</text>
+		</content>
+	</screen>
+	<screen name="error_open_tray" type="error">
+		<content align="center" valign="middle">	
+			<text>error.open_tray.message.1</text>
+			<text>error.open_tray.message.2</text>
+			<button type="error" text="button.no" id="button-no" destination="error_open_tray_restart" transition="default" disabled="false" />
+			<button type="error" text="button.yes" id="button-yes" destination="error_open_tray_fix" transition="default" disabled="false" />
+		</content>
+	</screen>
+	<screen name="error_open_tray_fix" type="error">
+		<content align="center" valign="middle">	
+			<text>error.open_tray_fix.message.1</text>
+			<text>error.open_tray_fix.message.2</text>
+			<button type="error" text="button.continue" id="button-continue" destination="test_pre-analysis" transition="whiteout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="error_open_tray_restart" type="error">
+		<content align="center" valign="middle">	
+			<text>error.open_tray_restart.message.1</text>
+			<text>error.open_tray_restart.message.2</text>
+			<button type="error" text="button.restart" id="button-restart" destination="restart" transition="blackout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="error_open_tray_call" type="error">
+		<content align="center" valign="middle">	
+			<text>error.open_tray_call.message</text>
+		</content>
+	</screen>
+	<screen name="error_generic" type="error">
+		<content align="center" valign="middle">	
+			<text>error.generic</text>
+		</content>
+	</screen>
+</screens>
