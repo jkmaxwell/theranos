@@ -1,6 +1,24 @@
 # theranos
 theranos memorabilia from 2007-2008
 
+## What's all this?
+
+A bunch of stuff I found in an iCloud folder I had lost access to for years. See below for why it exists.
+
+### Early version of the front-end code for the reader 
+I never said I was a good engineer. Shut it.
+
+### Business Card Template
+Have fun! Make your own for yourselves and the kids!
+
+### Nicotine Study
+Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
+
+### Other Stuff
+
+## What's not included?
+The reader industrial design contract from Yves Behar/Fuseproject because I don't want to drag them into this. But it's cool to see again.
+
 ## Not Yet Frequently Asked Questions But I'm Sure Some Reply Guy Will Make Me Wish I Did This So Here You go
 
 ### Something something you hung on to confidential data! U thief!
