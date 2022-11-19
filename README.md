@@ -13,10 +13,16 @@ Have fun! Make your own for yourselves and the kids!
 ### [Nicotine Study](nicotine_study)
 Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
 
-### Sales Deck
+### [Sales Deck](https://github.com/jkmaxwell/theranos/tree/main/sales_deck)
 This is the sales deck we'd use to pitch Theranos to people around 2008.
 
+### [Craigslist Ad](https://github.com/jkmaxwell/theranos/blob/main/craigslist_ad/Theranos%20CL%20posting%202.pdf)
+The infamous Craigslist ad that got my friends in big trouble
+
 ### Other Stuff
+- Reader mockups
+- Wireframes
+
 
 ## What's not included?
 The reader industrial design contract from Yves Behar/Fuseproject because I don't want to drag them into this. But it's cool to see again.
