@@ -26,10 +26,6 @@ Three sequential (refinement) presentations from FuseProject to Theranos for the
 - Reader mockups
 - Wireframes
 
-
-## What's not included?
-The reader industrial design contract from Yves Behar/Fuseproject because I don't want to drag them into this. But it's cool to see again.
-
 ## Not Yet Frequently Asked Questions But I'm Sure Some Reply Guy Will Make Me Wish I Did This So Here You go
 
 ### Something something you hung on to confidential data! U thief!
