@@ -1,5 +1,4 @@
-# theranos
-theranos memorabilia from 2007-2008
+# theranos memorabilia from 2007-2008
 
 ## What's all this?
 
@@ -32,3 +31,6 @@ Years later, after the downfall of Elizabeth and Theranos began, I found a folde
 
 See, Theranos IT was ridiculous. The computers were so locked down and managed that we had no outside email access, no chat access, we couldn't even install our own programs. And the guys who worked there in IT, as much as they wanted to be our buddies, made our lives quite difficult just trying to do our jobs. Being actual normal human beings in product design, we needed to work with contractors, get print work done, stuff that required outside access. And Apple iCloud drive (or whatever dumb name they had for it at the time, like MobileMe or iTools or something) somehow could get our files out of the building to hand off to outside vendors or work on at home.
 
+# Disclaimer
+
+I'm just sharing this so you can have a glimpse of the company in its early years, not for any personal gain or profit. If you've enjoyed what you've seen here and feel the need to learn more, please check out John Carreyrou's "Bad Blood," which is both factually accurate and more of a wild ride than the hulu doc.
