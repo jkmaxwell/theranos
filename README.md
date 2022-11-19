@@ -5,7 +5,7 @@
 A bunch of stuff I found in an iCloud folder I had lost access to for years. See below for why it exists.
 
 ### Early version of the front-end code for the reader 
-I never said I was a good engineer. Shut it.
+I never said I was a good engineer. 
 
 ### Business Card Template
 Have fun! Make your own for yourselves and the kids!
