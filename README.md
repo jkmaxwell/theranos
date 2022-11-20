@@ -14,7 +14,7 @@ Have fun! Make your own for yourselves and the kids!
 Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
 
 ### [Sales Deck](https://github.com/jkmaxwell/theranos/tree/main/sales_deck)
-This is the sales deck we'd use to pitch Theranos to people around 2008.
+This is the sales deck Elizabeth & the sales team used to pitch Theranos to people around 2008.
 
 ### [Craigslist Ad](https://github.com/jkmaxwell/theranos/blob/main/craigslist_ad/Theranos%20CL%20posting%202.pdf)
 The infamous Craigslist ad that got my friends in big trouble
