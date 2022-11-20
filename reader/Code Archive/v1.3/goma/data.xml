@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<screens>
+	<screen type="intro" name="intro">
+		<content>
+			<p>By using this system, you are pioneering a new approach to healthcare where real-time testing helps people like you make better decisions about their treatment.</p>
+			<p>Welcome to <em>Theranos</em>.</p>
+		</content>
+	</screen>
+	<screen type="main" class="center" name="start">
+		<content>	
+			<button type="start" text="Start the test" id="button-next" destination="survey1" transition="whiteout" disabled="false" />
+			<button type="flat" text="Configuration" id="button-configuration" destination="configuration" transition="whiteout" disabled="false" />
+			<button type="flat" text="Enrollment" id="button-enrollment" destination="enrollment" transition="whiteout" disabled="false" />
+			<button type="flat power" text="Power off" id="button-start" destination="power" transition="blackout" disabled="false" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey1">
+		<content align="left" valign="middle">	
+			<p>How do you <em>feel</em> today?</p>
+			<survey type="feel" name="survey1" />
+			<button type="previous" text="Go Back" id="button-previous" destination="start" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="survey2" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey2">
+		<content align="left" valign="top">	
+			<p>How well are you able to perform your <em>usual activities</em> today?</p>
+			<survey type="one" name="survey2">
+				<option>I am <em>fully able</em> to perform my activities.</option>
+				<option>I had <em>some problems</em>.</option>
+				<option>I am <em>unable</em> to perform my activities.</option>
+			</survey>
+			<button type="previous" text="Go Back" id="button-previous" destination="survey1" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="survey3" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey3">
+		<content align="left" valign="top">	
+			<p>How was your <em>appetite</em> today?</p>
+			<survey type="one" name="survey3">
+				<option><em>Very good</em></option>
+				<option><em>Good</em></option>
+				<option><em>Average</em></option>
+				<option><em>Poor</em></option>
+				<option><em>Very poor</em></option>
+			</survey>
+			<button type="previous" text="Go Back" id="button-previous" destination="survey2" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="survey4" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="survey4">
+		<content align="left" valign="top">	
+			<p>Have you experienced <em>any of the following</em> today?</p>
+			<p class="sub">Please select all that apply.</p>
+			<survey type="many" name="survey4" columns="2">
+				<option>Fatigue</option>
+				<option>Shortness of Breath</option>
+				<option>Headache</option>
+				<option>Decreased Appetite</option>
+				<option>Nausea</option>
+				<option>Depression</option>
+				<option>Body Pain</option>
+				<option>Dizziness</option>
+			</survey>
+			<button type="previous" text="Go Back" id="button-previous" destination="survey3" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_start" transition="next" disabled="true" />
+		</content>
+	</screen>
+	<screen type="main" class="survey" name="test_start">
+		<content align="left" valign="middle">	
+			<p>Now it’s time to take a quick blood test. Press the arrow button to get started.</p>
+			<button type="big" text="" id="button-next" destination="test_walkthrough_1" transition="whiteout" disabled="false" />
+			<button type="gray" text="Help me with this" id="button-help" destination="test_walkthrough_1" transition="whiteout" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_1" background="true">
+		<content align="left" valign="middle" width="280">	
+			<p>Open the sealed pouch and remove the <em>test cartridge</em>.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_start" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_2" transition="next" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_2" background="true">
+		<content>	
+			<p>Have these things ready.</p>
+			<ul>
+				<li>orange or gray lancet</li>
+				<li>alcohol swab</li>
+				<li>cartridge</li>
+				<li>transfer pen</li>
+			</ul>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_1" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_3" transition="next" disabled="false" />
+		</content>
+	</screen>
+	<screen name="test_walkthrough_3" background="true">
+		<content align="left" valign="middle" width="280">	
+			<p>First, wipe your finger with the <em>alcohol pad</em>.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_2" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_4" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_4" background="true">
+		<content align="left" valign="middle" width="380">	
+			<p>Now, prick your finger with the <em>lancet</em>.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_3" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_5" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_5" background="true">
+		<content align="left" valign="middle" width="350">	
+			<p>Touch the <em>tip of the transfer pen</em> to your finger until the blood reaches the fill line.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_4" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_6" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_6" background="true">
+		<content align="left" valign="middle" width="330">	
+			<p>Hold the <em>tip of the pen</em> inside the hole with the <span class="red">red</span> circle.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_5" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_7" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_7" background="true">
+		<content align="left" valign="middle">	
+			<p>Press the <em>plunger</em>.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_6" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_walkthrough_8" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_walkthrough_8" action="tray-open" background="true">
+		<content align="right" valign="middle" width="280">	
+			<p>Slide the <em>cartridge</em> in all the way.</p>
+			<button type="previous" text="Go Back" id="button-previous" destination="test_walkthrough_7" transition="previous" disabled="false" />
+			<button type="next" text="Next" id="button-next" destination="test_analysis" transition="blackout" disabled="false" />				
+		</content>
+	</screen>
+	<screen name="test_analysis" type="status">
+		<content>	
+			<p>Analyzing information.</p>
+			<p>Please do not turn off or unplug the device.</p>
+			<statusbar />
+			<p>Analysis complete.</p>
+		</content>
+	</screen>
+	<screen>
+		<content>	
+			<p>Press the button to eject the <em>cartridge</em>.</p>
+			<button type="next" text="Next" id="button-next" destination="next" transition="next" disabled="false" />				
+		</content>
+	</screen>
+	<screen>
+		<content>	
+			<p>Please throw the cartridge and used supplies in the trash. Then, press the <em>button</em> below to close the tray.</p>
+			<button type="next" text="Next" id="button-next" destination="next" transition="next" disabled="false" />
+		</content>
+	</screen>
+	<screen>
+		<content>	
+			<p>You’re all done for today.  See you again tomorrow.</p>
+			<p>Entering standby mode in 1 second. Touch the screen at any time to resume.</p>
+		</content>
+	</screen>
+	<screen type="main" class="configuration" name="configuration">
+		<content align="left" valign="middle">	
+			<p>Configuration</p>
+		</content>
+	</screen>
+	<screen type="main" class="enrollment" name="enrollment">
+		<content align="left" valign="middle">	
+			<p>Enrollment</p>
+		</content>
+	</screen>
+</screens>

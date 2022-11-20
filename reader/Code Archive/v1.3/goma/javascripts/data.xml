@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<screens>
+	<screen type="intro">
+		<content>
+			<p>By using this system, you are pioneering a new approach to healthcare where real-time testing helps people like you make better decisions about their treatment.</p>
+			<p>Welcome to <em>Theranos</em>.</p>
+		</content>
+	</screen>
+	<screen type="main" class="center">
+		<content>	
+			<button type="start" text="Start the test" id="button-start" destination="content" />
+			<button type="flat" text="Configuration" id="button-start" destination="buttons" />
+			<button type="flat" text="Enrollment" id="button-start" destination="buttons" />
+			<button type="flat power" text="Power off" id="button-start" destination="buttons" />
+		</content>
+	</screen>
+	<screengroup name="main">
+		<screen type="main" class="survey">
+			<content>	
+				<p>How do you <em>feel</em> today?</p>
+			</content>
+		</screen>
+		<screen type="main" class="survey">
+			<content>	
+				<fieldset>
+					<legend>How well are you able to perform your <em>usual activities</em> today?</legend>
+					<div><label><input type="radio" name="survey1" value="1" />I am fully able to perform my activities.</label></div>
+					<div><label><input type="radio" name="survey1" value="2" />I had some problems.</label></div>
+					<div><label><input type="radio" name="survey1" value="3" />I am unable to perform my activities.</label></div>
+				</fieldset>
+			</content>
+		</screen>
+		<screen type="main" class="survey">
+			<content>	
+				<fieldset>
+					<legend>How was your <em>appetite</em> today?</legend>
+					<div><label><input type="radio" name="survey2" value="1" />Very good</label></div>
+					<div><label><input type="radio" name="survey2" value="2" />Good</label></div>
+					<div><label><input type="radio" name="survey2" value="3" />Average</label></div>
+					<div><label><input type="radio" name="survey2" value="3" />Poor</label></div>
+					<div><label><input type="radio" name="survey2" value="3" />Very poor</label></div>
+				</fieldset>
+			</content>
+		</screen>
+		<screen type="main" class="survey">
+			<content>	
+				<fieldset>
+					<legend>Have you experienced <em>any of the following</em> today?</legend>
+					<p>Please select all that apply.</p>
+					<div><label><input type="checkbox" name="survey3" value="Fatigue" />Fatigue</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Shortness of Breath" />Shortness of Breath</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Headache" />Headache</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Decreased Appetite" />Decreased Appetite</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Nausea" />Nausea</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Depression" />Depression</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Body Pain" />Body Pain</label></div>
+					<div><label><input type="checkbox" name="survey3" value="Dizziness" />Dizziness</label></div>
+				</fieldset>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Now it’s time to take a quick blood test. Press the arrow button to get started.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Would you like some help through the testing process?</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Open the sealed pouch and remove the <em>test cartridge</em>.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Have these things ready.</p>
+				<ul>
+					<li>orange or gray lancet</li>
+					<li>alcohol swab</li>
+					<li>cartridge</li>
+					<li>transfer pen</li>
+				</ul>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>First, wipe your finger with the <em>alcohol pad</em>.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Now, prick your finger with the <em>lancet</em>.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Touch the <em>tip of the transfer pen</em> to your finger until the blood reaches the fill line.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Hold the <em>tip of the pen</em> inside the hole with the <span class="red">red</span> circle.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Press the <em>plunger</em>.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Slide the <em>cartridge</em> in all the way.</p>
+			</content>
+		</screen>
+		<screen type="status">
+			<content>	
+				<p>Analyzing information.</p>
+				<p>Please do not turn off or unplug the device.</p>
+				<statusbar />
+				<p>Analysis complete.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Press the button to eject the <em>cartridge</em>.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>Please throw the cartridge and used supplies in the trash. Then, press the <em>button</em> below to close the tray.</p>
+			</content>
+		</screen>
+		<screen>
+			<content>	
+				<p>You’re all done for today.  See you again tomorrow.</p>
+				<p>Entering standby mode in 1 second. Touch the screen at any time to resume.</p>
+			</content>
+		</screen>
+	</screengroup>
+</screens>

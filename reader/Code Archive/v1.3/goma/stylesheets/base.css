@@ -1,0 +1,401 @@
+/* 
+** RESET!
+*/ 
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0; padding: 0; }
+img,fieldset { border: none; }
+ul,ol { list-style: none; }
+label { cursor: pointer; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,abbr { font-size: 1em; font-weight: normal; font-style: normal; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*
+** FUNCTIONAL 
+*/
+.clear { clear: both; }
+.clearer { clear: both; display: block; margin: 0; padding: 0; height: 0; line-height: 1px; font-size: 1px; }
+
+/*
+**	TYPOGRAPHY
+*/
+html {
+	height:480px;
+	overflow:hidden;
+	width:640px;
+}
+body {
+	background: #fff url() no-repeat top left;
+	color: #000;
+	font: 100 36px/43px Whitney-Medium;
+	letter-spacing: -0.001em;
+	height: 420px;
+}
+
+a {
+	color: #007341;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+em {
+	font-weight: normal;
+	color: rgb(0,178,0);
+}
+
+body.survey em {
+	color: #000;
+	font-family: Whitney-Bold;
+}
+
+/*
+** BUTTONS
+*/
+#buttons {
+	position: absolute;
+	top: 419px;
+	left: 0;
+	width: 584px;
+	height: 61px;
+	padding: 0 28px;
+}
+.button {
+	font: 100 36px/43px Whitney-Semibold;
+	letter-spacing: 0em;
+	outline: 0;
+	text-decoration: none;
+}
+a.button:hover,
+a.button:active {
+	text-decoration: none;
+}
+a.button.next {
+	background: #fff url('../images/button_bottom_next_green.png') no-repeat top right;
+	color: rgb(64,128,0);
+	display: block;
+	height: 46px;
+	float: right;
+	padding: 0 48px 0 0;
+	font-size: 18px;
+}
+a.button.next span {
+	background: inherit;
+	background-position: top left;
+    padding: 11px 0px 14px 17px;
+}
+a.button.next:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom right;
+}
+a.button.next:active span {
+	background-position: bottom left;
+    padding: 11px 0px 12px 17px;
+}
+.button.previous {
+	background: #fff url('../images/button_bottom_previous_gray.png') no-repeat top left;
+	color: rgb(128,128,128);
+	display: block;
+	height: 46px;
+	float: left;
+	padding: 0 0 0 48px;
+	font-size: 18px;
+	position: absolute;
+}
+.button.previous span {
+	background: inherit;
+	background-position: top right;
+    padding: 11px 17px 14px 0px;
+}
+a.button.previous:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom left;
+}
+a.button.previous:active span {
+	background-position: bottom right;
+    padding: 11px 17px 12px 0px;
+}
+a.button.flat {
+	background: #fff url('../images/button_bottom_white.png') no-repeat top right;
+	color: rgb(128,128,128);
+	display: block;
+	height: 40px;
+	float: left;
+	margin-right: 30px;
+	padding: 0 16px 0 0px;
+	font-size: 18px;
+}
+a.button.flat span {
+	background: inherit;
+	background-position: top left;
+	display: block;
+	line-height: 14px;
+    padding: 12px 0 14px 16px;
+}
+a.button.flat:active {
+	background-position: bottom right;
+}
+a.button.flat:active span {
+	background-position: bottom left;
+}
+a.button.flat.power {
+	float: right;
+	margin-right: 0;
+	padding: 0 49px 0 0px;
+	color: rgb(190,38,17);
+}
+a.button.start,
+a.button.green,
+a.button.white {
+	background: #fff url('../images/button_big_green.png') no-repeat top right;
+	color: rgb(64,128,0);
+	display: block;
+	float: left;
+	height: 90px;
+	padding: 0 92px 0 0;
+	left: 161px;
+	top: 201px;
+	position: absolute;
+}
+a.button.start span,
+a.button.green span,
+a.button.white span {
+	background: inherit;
+	background-position: top left;
+	display: block;
+    padding: 20px 0 28px 30px;
+}
+a.button.start:active,
+a.button.green:active,
+a.button.white:active {
+	height: 88px;
+	padding-top: 1px;
+	background-position: bottom right;
+}
+a.button.start:active span,
+a.button.green:active span,
+a.button.white:active span {
+	background-position: bottom left;
+    padding: 20px 0 25px 30px;
+}
+a.button.green {
+	float: right;
+	padding: 0 28px 0 0;
+	left: 0;
+	top: 0;
+	position: relative;
+}
+a.button.white {
+	background-image: url('../images/button_big_white.png');
+	color: rgb(128,128,128);
+	float: left;
+	left: 0;
+	top: 0;
+	position: relative;
+}
+a.button.gray {
+	background: #fff url('../images/button_bottom_previous_gray.png') no-repeat top left;
+	color: rgb(128,128,128);
+	display: block;
+	height: 46px;
+	float: right;
+	padding: 0 0 0 16px;
+	font-size: 18px;
+}
+a.button.gray span {
+	background: inherit;
+	background-position: top right;
+    padding: 11px 17px 14px 0px;
+}
+a.button.gray:active {
+	height: 44px;
+	padding-top: 1px;
+	background-position: bottom left;
+}
+a.button.gray:active span {
+	background-position: bottom right;
+    padding: 11px 17px 12px 0px;
+}
+a.button.big {
+	background: #fff url('../images/button_big_green_circle.png') no-repeat top left;
+	display: block;
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+a.button.big:active {
+	background-position: bottom left;
+}
+
+a.button.disabled { opacity: 0.1; }
+
+#textcontainer {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	height: 420px;
+}
+p + p {
+	margin-top: 43px;
+}
+#textcontainer.middle {
+	display: table;
+	vertical-align: middle;
+}
+#textcontainer.middle p {
+	display: table-cell; vertical-align: middle
+}
+
+/*
+** SMILEYS
+*/
+.smileys {
+	position: relative;
+	background: #fff url('../images/survey_feel_connectors.png') no-repeat bottom center;
+	top: 30px;
+	padding-bottom: 85px;
+}
+.smileys label {
+/*	background: #fff url('../images/survey_feel_connector.png') no-repeat top center; */
+	display: inline;
+	font-family: Whitney-Semibold;
+	position: absolute;
+	top: 74px;
+}
+a.smiley {
+	display: block;
+	width: 63px;
+	height: 63px;
+	position: absolute;
+	z-index: 20;
+	text-decoration: none;
+	left: 20px;
+}
+a.smiley.selected {
+	background: transparent url('../images/survey_feel_smileys_selected.png') no-repeat top left;
+}
+a.smiley span {
+	background: #fff url('../images/survey_feel_smileys.png') no-repeat top left;
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: -10;
+}
+
+/*
+** PAGE
+*/
+
+.page {
+	color: #000;
+	background-color: #fff;
+	width: 580px;
+	height: 420px;
+	top: 0;
+	left: 0;
+	padding: 30px;
+	position: absolute;
+}
+
+.page.horizontal-center {text-align: center;}
+.page.horizontal-right {text-align: right;}
+.page.vertical-middle {display: table-cell;}
+.page.vertical-bottom {display: table-cell;}
+/*
+** PAGE : INTRO
+*/
+
+.page.intro { font-family: Whitney-Book; }
+
+.page.intro p {
+	display: block;
+	opacity: 1.0;
+}
+
+.page.intro p em { color: #000;	font-family: Whitney-SemiboldItalic; }
+
+/*
+** PAGE : STATUS
+*/
+.page.status {
+	background-color: #000;
+	border: 2px solid white;
+	color: #fff;
+}
+.page.status p {
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/*
+** PAGE : MAIN
+*/
+.page.main p em {
+	color: #000;
+	font-family: Whitney-Bold;
+}
+
+p {
+	width: 580px;
+}
+p.sub {
+	color:gray;
+	font-size:24px;
+	line-height:24px;
+	margin-bottom:0pt;
+	margin-top:12px;
+}
+
+/* 
+** PAGE : COLUMNS
+**/
+.columns-2 {width: 100%;}
+div.column {float: left; margin-right: 30px;}
+
+/*
+** TRANSITIONS : WHITEOUT / BLACKOUT
+*/
+div.whiteout,
+div.blackout {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 640px;
+	height: 480px;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.0;
+}
+div.blackout { background-color: black; }
+
+/*
+** SURVEY : RADIO BUTTONS
+*/
+label {
+	display: block;
+	clear: both;
+	font-size: 26px;
+	margin-top: 16px;
+}
+label em {
+	color: #000;
+	font-family: Whitney-Bold;
+}
+div.radio,
+div.checkbox {
+	background: #fff url(../images/radio.png) no-repeat left top;
+	float: left;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	line-height: 0%;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+div.checked { background-position: left -45px; }

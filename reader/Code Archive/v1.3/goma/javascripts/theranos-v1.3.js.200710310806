@@ -1,0 +1,269 @@
+$().ready(function(){
+	$.get("data.xml", function(data){															// INITIALIZE START SCREEN WITH THERANOS INTRO
+		pageDraw(
+			$(data).find('screen:first').attr('type'),
+			$(data).find('screen:first').find('content:first'),
+			$(data).find('screen:first').attr('name')
+		);
+		/* REFORMAT
+		pageDraw('screen:first');
+		*/
+		setTimeout(																				// REFRESH TO START SCREEN
+		function(){
+			$.get("data.xml", function(data){
+				pageDraw(
+					$(data).find('screen:eq(1)').attr('type'),
+					$(data).find('screen:eq(1)').find('content:first'),
+					$(data).find('screen:eq(1)').attr('name'),
+					"whiteout"
+				);
+				/* REFORMAT
+				pageDraw('screen:eq(1)',"whiteout");
+				*/				
+			})
+		}, 1000
+		)
+	});
+});
+
+var currentPage = null;																			// INITIALIZE CURRENT PAGE
+
+function pageDraw(sType,oContent,sName,sMode) {
+	currentPage = sName;																		// SET REFERENCE TO CURRENT PAGE FOR NAV
+	var elem = $('<div class="page">');															// INITIALIZE CONTENT BLOCK
+	if (oContent.attr('align')) {elem.addClass('horizontal-'+oContent.attr('align'))}
+	if (oContent.attr('valign')) {elem.addClass('vertical-'+oContent.attr('valign'))}
+	elem.append(oContent.find('p'))																// APPEND P BLOCKS
+	oContent.find('survey').each(function(i){													// BUILD SURVEYS
+		switch($(this).attr('type')) {
+			case "feel":
+				elem.append(smiley())
+				break;
+			case "one":
+				$(this).find('option').each(function(i){
+					$('<label>')
+						.append($('<div class="radio">').click(function(){
+							$('.radio').removeClass('checked');
+							$('.disabled').fadeTo(500,1.0).removeClass('disabled');				// ACTIVATE 'NEXT' BUTTON
+							$(this).addClass('checked')
+						}))
+						.append($(this).text())
+						.appendTo(elem)
+				})
+				break;
+			case "many":
+				$(this).find('option').each(function(i){
+					$('<label>')
+						.append($('<div class="checkbox">').click(function(){
+							$('.disabled').fadeTo(500,1.0).toggleClass('disabled');				// ACTIVATE 'NEXT' BUTTON
+							$(this).toggleClass('checked')
+							if (($('.checkbox.checked').size() < 1) && (!$('.button.next').hasClass('disabled'))) {
+								$('.button.next').fadeTo(500,0.1).toggleClass('disabled');		// DEACTIVATE 'NEXT' BUTTON
+							}
+						}))
+						.append($(this).text())
+						.appendTo(elem)
+				})
+				break;
+			default:
+				
+		}
+	})
+	function _drawButtons() {
+		$('#buttons').empty();																	// CLEAR OUT BUTTON DIV (INIT)
+		oContent.find('button').each(function(i){ 												// APPEND BUTTONS
+			var _type = $(this).attr('type')													// EITHER PUT BUTTONS ON STAGE OR IN BUTTON DIV
+			if (_type == "next" ||
+				_type == "previous" ||
+				(_type.indexOf('flat') >= 0)) {
+				$('#buttons').append(new Button($(this)).draw())
+			} else { elem.append(new Button($(this)).draw()) }
+		})
+	}	
+	var _easingType = "easeOutQuint";
+	var _easingTime = 1500;
+	switch(sMode) {
+		case "next":		
+			$('div.page:last')
+				.animate(
+					{left: '-640px'}, 
+					_easingTime,
+					_easingType,
+					function(){$(this).remove()})
+				.after(
+					elem
+					.addClass(sType)
+					// draw buttons
+					.css("left","640px")
+					.animate({left: '0px'}, _easingTime, _easingType)
+				);	
+				_drawButtons();
+			break;
+		case "previous":		
+			$('div.page:first')
+				.animate(
+					{left: '640px'}, 
+					_easingTime,
+					_easingType,
+					function(){$(this).remove()})
+				.before(
+					elem
+					.addClass(sType)
+					.css("left","-640px")
+					.animate({left: '0px'}, _easingTime, _easingType)
+				);	
+				_drawButtons();
+			break;
+		case "whiteout":
+		case "blackout":
+			$('div.page:last').before(
+				$('<div class="'+sMode+'">')
+				.animate(
+					{opacity: 1.0}, 
+					500,
+					'easeOutQuint',
+					function() {
+						$('div.page').remove();
+						$(this).before(elem.addClass(sType));
+						_drawButtons();
+						$(this).animate({opacity:0.0},500, function() {$(this).remove()})
+					})
+				);
+			break;
+		default:
+			$('div.page').remove();
+			$('body').prepend(elem.addClass(sType));
+			_drawButtons();
+			break;
+	}
+}
+
+var selectedSmiley = null;
+
+function smiley() {
+	var count = 10;
+	var smileys = $('<div class="smileys">');
+	for (i=count;i>0;i--) {
+		var elem = $('<a class="smiley"><span>&nbsp;</span></a>');
+		elem.bind('click',function(){
+			$('.smiley').removeClass('selected');
+			$(this).addClass('selected');
+			selectedSmiley = $(this);
+			$('.disabled').fadeTo(500,1.0).removeClass('disabled');
+		});
+		elem.find('span').css('backgroundPosition',"-"+(i-1)*54+"px 0px");
+		elem.css('left',16+(i-1)*54+"px")
+		smileys.append(elem);
+	}
+	// set up labels
+	var labels = new Array();
+	labels["very bad"] = "rgb(114,121,197)";
+	labels["average"] = "rgb(128,128,128)";
+	labels["very good"] = "rgb(162,157,40)";
+	for (var label in labels) {
+		smileys.append($('<label>').text(label).css('color',labels[label]));
+	}
+	$(smileys).find('label:eq(1)').css({'text-align':'center','width':'200px','left':'190px'})
+	$(smileys).find('label:eq(2)').css('right',0);
+	return smileys;
+}
+
+function Button(oButtonObject) {
+	this.draw = function() {
+		var buttonType = $(oButtonObject).attr('type') 									// BUTTON TYPE
+		var buttonText = $(oButtonObject).attr('text')										// BUTTON LABEL
+		var disabled = ($(oButtonObject).attr('disabled') == "true") ? "disabled" : "";	// DISABLE IF FLAGGED IN XML
+		var _id = $(oButtonObject).attr('id') 												// BUTTON ID (may not be necessary)
+		return $("<a href='#' class='button'>")
+				.append($("<span>").append(buttonText))
+				.click(function(){
+					if (!$(this).hasClass('disabled')) {
+						var reference = null;																// reference to object in DOM
+						var elem = $('<a href="#" class="button"><span></span></a>');
+						var destination = $(oButtonObject).attr('destination')								// WHERE BUTTON LEADS
+						var transition = $(oButtonObject).attr('transition')		
+						switch (buttonType) {
+							case "next":
+								buttonText = (buttonText) ? buttonText : "Next";
+								_id = (_id) ? _id : 'button-next';
+								break;
+							case "previous":
+								this.buttonText = (this.buttonText) ? this.buttonText : "Go Back";
+								_id = (_id) ? _id : 'button-previous';
+								break;
+							case "flat":
+								buttonText = (buttonText) ? buttonText : "Default";
+								break;
+							case "flat power":
+								buttonText = (buttonText) ? buttonText : "Power Off";
+								_id = (_id) ? _id : 'button-power';
+								break;
+							default:
+								break;
+						}					
+						$.get("data.xml", function(data){
+							switch (destination) {
+								case "next":
+									destination = 'screen[name="'+currentPage+'"]';
+									pageDraw(
+										$(data).find(destination).next().attr('type'),
+										$(data).find(destination).next().find('content:first'),
+										$(data).find(destination).next().attr('name'),
+										transition
+									);
+									break;
+								case "previous":
+									destination = 'screen[name="'+currentPage+'"]';
+									pageDraw(
+										$(data).find(destination).prev().attr('type'),
+										$(data).find(destination).prev().find('content:first'),
+										$(data).find(destination).prev().attr('name'),
+										transition
+									);
+									break;
+								case "start":
+									destination = 'screen:first';
+									pageDraw(
+										$(data).find(destination).attr('type'),
+										$(data).find(destination).find('content:first'),
+										$(data).find(destination).attr('name'),
+										transition
+									);
+									break;
+								case "configuration":
+								case "enrollment":
+									var answer = passwordCheck(destination);
+									if(answer) {
+										destination = 'screen[name="'+destination+'"]';
+										pageDraw(
+											$(data).find(destination).attr('type'),
+											$(data).find(destination).find('content:first'),
+											$(data).find(destination).attr('name'),
+											transition
+										);
+									}
+									break
+								default:
+									destination = 'screen[name="'+destination+'"]';
+									pageDraw(
+										$(data).find(destination).attr('type'),
+										$(data).find(destination).find('content:first'),
+										$(data).find(destination).attr('name'),
+										transition
+									);
+									break;
+							}
+						})						
+					}
+					return false;
+				})
+				.addClass(buttonType)
+				.addClass(disabled)
+				.attr({'id':_id})
+	}
+	var passwordCheck = function(passwordType) {
+		var passcode = 303;
+		var verified = (parseInt(prompt(passwordType)) == passcode) ? true : false;
+		return verified // DID USER ENTER PROPER PASSWORD?
+	}
+}
