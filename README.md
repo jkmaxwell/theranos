@@ -39,3 +39,8 @@ See, Theranos IT was ridiculous. The computers were so locked down and managed t
 # Disclaimer
 
 I'm just sharing this so you can have a glimpse of the company in its early years, not for any personal gain or profit. If you've enjoyed what you've seen here and feel the need to learn more, please check out John Carreyrou's "Bad Blood," which is both factually accurate and more of a wild ride than the hulu doc.
+
+Justin Maxwell    
+Twitter: [@303](https://twitter.com/303)    
+Mastodon: [@303@mastodon.social](https://mastodon.social/@303)    
+Website: [code404.com](https://code404.com)    
