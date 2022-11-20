@@ -1,0 +1,48 @@
+Job ID: HCDdUX002
+
+Visual Interface Designer - Menlo Park / Palo Alto 
+
+The Human-Centered Design / development team at Theranos is looking for a Visual Interface Designer.  This person must be interested in emerging scientific and technological advancements, understand the concept of triage in development and the design process, and most of all, ready and eager to get neck-deep in a project unlike any other advertised here.  Be prepared to ignore IMs, let your Facebook status stagnate every few days, and not even mind.  We are a group of ex-Apple, Adobe, Macromedia, Sony, Frog, Logitech, Stanford and Wilson Sonsini Goodrich & Rosati folks who jumped ship from our cushy jobs to be part of something huge, and we're looking for a few more to help us out.
+
+
+
+The Role: Visual Interface Designer - Menlo Park / Palo Alto 
+
+Do you have a passion for elegant interfaces, the design of everyday things, the science of pixel placement and animation?  What about creating great products that have the potential to be used by millions of people? We're looking for a visual interface designer to join our User Experience - HCD/d group. You'll be responsible for all stages of design on one or more of Theranos' consumer-facing experiences. Therefore, you must think strategically while executing, with great attention to detail. This role requires excellent communication skills, as you will be working with Interaction Designers, Human Interface Designers, User Experience Researchers, Backend Engineers, and Product Managers.
+
+The Area: User Experience for Human-Centered Design / development (HCD/d) 
+
+We're passionately interested in our users and strive to learn everything we can about their behaviors, attitudes and emotions to help define the products and experiences we create. Our group, HCD/d, is a critical driving force behind gathering these insights and using them to inspire and inform design. We are a close-knit, team of product managers, interaction designers, visual interface designers, user researchers, wordsmiths and web developers collaborating closely with hardware and robotics engineering and life science teams.  We're creating innovative, usable, great-looking products that will change the face of healthcare.  This stuff is as sci-fi as it gets.
+
+This position reports to the Director of User Experience / HCD/d and is based in Menlo Park - Palo Alto, CA. 
+
+
+
+Requirements include, but are not limited to:
+- Solid understanding of working with -- and designing for -- both web applications and consumer hardware interfaces (i.e., kiosks).
+- Comfortable understanding and designing with JavaScript boundaries in mind.
+- Able to prototype in Flash or other dynamic prototyping tools.
+- Experience working on large-scale consumer websites.
+- Background in Graphic Design, Information Design, or other visual arts; strong technical background a plus.
+- Minimum of 3+ years experience designing outstanding web-based products for a consumer-oriented website as a key member of a design team.
+- Familiarity with capabilities and limitations of HTML and CSS.
+
+
+
+Technologically, we assume you know what tools you need to do your work.  We're not going to dictate that Ñ We'll make sure you have what you need.  However, here are the areas in which we work, and therefore would hope to see some proficiency, if not expertise:
+
+- Adobe Photoshop, Illustrator, Flash, Fireworks
+- CSS, HTML / XHTML
+- Mac OS X
+- UNIX and variants, preferably Ubuntu
+- Version Control Systems, preferably Subversion
+
+Of course, these aren't required, but knowledge of the above will certainly increase your "plays well with others" potential. 
+
+
+
+What's in it for you:
+- Being a part of something huge that will actually benefit humanity instead of just taking people's money or selling them culture
+- Being an early bird on a team that is growing rapidly, and having the opportunity to shape that team's growth
+- Working in Stanford Research Park, one of the most beautiful spots in the valley, and birthplace of some of the most significant technological innovation in modern history.
+- The usual competitive, great benefits, plus a fancy espresso machine in the kitchen, catered food, and good people.

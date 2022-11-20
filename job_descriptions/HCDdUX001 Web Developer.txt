@@ -1,0 +1,58 @@
+Job ID: HCDdUX001
+
+Web Developer - Menlo Park / Palo Alto 
+
+The Human-Centered Design / development team at Theranos is looking for a web developer.  This person must be interested in emerging scientific and technological advancements, understand the concept of triage in web development, and most of all, ready and eager to get neck-deep in a project unlike any other advertised here.  Be prepared to ignore IMs, let your Facebook status stagnate every few days, and not even mind.  We are a group of ex-Apple, Adobe, Macromedia, Sony, Frog, Logitech, Stanford and Wilson Sonsini Goodrich & Rosati folks who jumped ship from our cushy jobs to be part of something huge, and we're looking for a few more to help us out.
+
+
+
+The Role: Web Developer - Menlo Park / Palo Alto 
+
+Do you have a passion for elegant, efficient programming?  What about creating great products that have the potential to be used by millions of people? We're looking for a front-end Web Developer to join our User Experience - HCD/d group. You will be responsible for applying CSS/XHTML, AJAX, and Web 2.0 techniques to Theranos' current and future products. This role requires excellent communication skills as you will be working with Interaction Designers, Visual Designers, User Experience Researchers, Backend Engineers, and Product Managers.
+
+This position reports to the Director of User Experience / HCD/d and is based in Menlo Park - Palo Alto, CA. 
+
+
+
+The Area: User Experience for Human-Centered Design / development (HCD/d) 
+
+We're passionately interested in our users and strive to learn everything we can about their behaviors, attitudes and emotions to help define the products and experiences we create. Our group, HCD/d, is a critical driving force behind gathering these insights and using them to inspire and inform design. We are a close-knit, team of product managers, interaction designers, visual interface designers, user researchers, wordsmiths and web developers collaborating closely with hardware and robotics engineering and life science teams.  We're creating innovative, usable, great-looking products that will change the face of healthcare.  This stuff is as sci-fi as it gets.
+
+
+
+Must demonstrate development skills across a range of technologies including:
+
+Required:
+- CSS, HTML / XHTML
+- AJAX / JavaScript (and leading libraries/toolkits, preferably jQuery and Dojo)
+- W3C DOM methods and properties
+- XML / JSON / XSLT
+
+Proficient:
+- SVG, SXBL, XBL2
+- Adobe Photoshop, Illustrator, Flash
+- UNIX and variants
+- Version Control Systems, preferably Subversion
+
+
+
+Responsibilities include, but are not limited to:
+- Develop optimized / cross-platform front-end code in CSS / XHTML, JavaScript / AJAX.
+- Develop functional prototypes to demonstrate concepts and to enable rapid iterative support for evaluative research.
+- Collaborate with product managers, designers, backend engineers, and researchers to refine the user experience.
+- Partner with Engineering to ensure that interactive techniques and technologies translate through to shipping products and services.
+- Connect with the user interface development community to track latest trends and emerging technologies.
+
+
+
+Requirements:
+- A proven track record of launching interactive websites/applications.
+- At least three years of relevant web programming experience.
+- Portfolio including a self-started web-based project.
+
+
+What's in it for you:
+- Being a part of something huge that will actually benefit humanity instead of just taking people's money or selling them culture
+- Being an early bird on a team that is growing rapidly, and having the opportunity to shape that team's growth
+- Working in Stanford Research Park, one of the most beautiful spots in the valley, and birthplace of some of the most significant technological innovation in modern history.
+- The usual competitive, great benefits, plus a fancy espresso machine in the kitchen, catered food, and good people.

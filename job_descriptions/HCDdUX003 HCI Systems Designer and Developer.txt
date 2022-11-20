@@ -1,0 +1,52 @@
+Job ID: HCDdUX003
+
+HCI Systems Designer / Developer - Menlo Park / Palo Alto 
+
+The Human-Centered Design / development team at Theranos is looking for an HCI Systems Designer / Developer.  This person must be interested in emerging scientific and technological advancements, understand the concept of triage in development and the design process, and most of all, ready and eager to get neck-deep in a project unlike any other advertised here.  Be prepared to ignore IMs, let your Facebook status stagnate every few days, and not even mind.  We are a group of ex-Apple, Adobe, Macromedia, Sony, Frog, Logitech, Stanford and Wilson Sonsini Goodrich & Rosati folks who jumped ship from our cushy jobs to be part of something huge, and we're looking for a few more to help us out.
+
+
+
+The Role: HCI Systems Designer / Developer - Menlo Park / Palo Alto 
+
+Do you have a passion for elegant interfaces, the design of everyday things, the science of visual and tactile feedback?  What about creating great products that have the potential to be used by millions of people? We're looking for a human interface designer to join our User Experience - HCD/d group. You'll be responsible for both championing the role of research in the product design and development process, *and* executing those ideas in wireframes, prototypes and production work.  You should be experienced with a broad range of user research methods and practices. This role requires excellent communication skills, as you will be working with Interaction Designers, Visual Interface Designers, User Experience Researchers, Backend Engineers, and Product Managers.
+
+This position reports to the Director of User Experience / HCD/d and is based in Menlo Park - Palo Alto, CA. 
+
+
+
+The Area: User Experience for Human-Centered Design / development (HCD/d) 
+
+We're passionately interested in our users and strive to learn everything we can about their behaviors, attitudes and emotions to help define the products and experiences we create. Our group, HCD/d, is a critical driving force behind gathering these insights and using them to inspire and inform design. We are a close-knit, team of product managers, interaction designers, visual interface designers, user researchers, wordsmiths and web developers collaborating closely with hardware and robotics engineering and life science teams.  We're creating innovative, usable, great-looking products that will change the face of healthcare.  This stuff is as sci-fi as it gets.
+
+
+
+Requirements include, but are not limited to:
+- Introduce research process in a rapidly growing company and fast-paced chaotic environment.
+- Effectively articulate and demonstrate the value and ROI on research efforts.
+- Expert understanding of a variety of research methods and which methods are appropriate for different needs. Direct experience executing research; bonus points for driving innovation in research methods and practices.
+- Must have experience integrating formative and summative user research into design practices. Able to mentor and train others on a variety of methodologies.
+- Able to use insights from user research to drive product strategy and innovation by facilitating cross-functional participation in analysis and brainstorming.
+- Able to effectively communicate, coordinate, and integrate research efforts and data from other research organizations (marketing, data analytics, etc.) to create a coherent understanding of our users.
+- Strong communication skills, excellent interpersonal skills, able to collaborate and negotiate effectively in a cross-functional team.
+- Must be able to build relationships and establish credibility with smart engineers, PMs, and designers quickly.
+- Effective use of reading, writing, oral communications skills, presentation techniques, meeting mechanics, and team building techniques.
+
+
+Technologically, we assume you know what tools you need to do your work.  We're not going to dictate that Ñ We'll make sure you have what you need.  However, here are the areas in which we work, and therefore would hope to see some proficiency:
+
+- CSS, HTML / XHTML
+- AJAX / JavaScript (and leading libraries/toolkits, preferably jQuery and Dojo)
+- Adobe Photoshop, Illustrator, Flash, Fireworks
+- OmniGraffle (we also love OmniOutliner and NovaMind)
+- Mac OS X
+- UNIX and variants, preferably Ubuntu
+- Version Control Systems, preferably Subversion
+
+Of course, these aren't required, but knowledge of the above will certainly increase your "plays well with others" potential. 
+
+
+What's in it for you:
+- Being a part of something huge that will actually benefit humanity instead of just taking people's money or selling them culture
+- Being an early bird on a team that is growing rapidly, and having the opportunity to shape that team's growth
+- Working in Stanford Research Park, one of the most beautiful spots in the valley, and birthplace of some of the most significant technological innovation in modern history.
+- The usual competitive, great benefits, plus a fancy espresso machine in the kitchen, catered food, and good people.
