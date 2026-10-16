@@ -11,7 +11,7 @@ I never said I was a good engineer.
 Have fun! Make your own for yourselves and the kids!
 
 ### [Employment Documents](employment_documents)
-My July 16, 2007 offer letter (with personal details redacted) and May 16, 2008 termination letter.
+My offer and termination letters, employment confidentiality and invention assignment agreement, and 2007 benefits booklet.
 
 ### [Nicotine Study](nicotine_study)
 Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
