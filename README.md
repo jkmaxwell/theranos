@@ -10,6 +10,9 @@ I never said I was a good engineer.
 ### [Business Card Template](https://github.com/jkmaxwell/theranos/tree/main/business_card_template)
 Have fun! Make your own for yourselves and the kids!
 
+### [Employment Documents](employment_documents)
+My July 16, 2007 offer letter (with personal details redacted) and May 16, 2008 termination letter.
+
 ### [Nicotine Study](nicotine_study)
 Presentation and product plan for Theranos + [Redacted Big Pharma Co] Nicotine study
 
