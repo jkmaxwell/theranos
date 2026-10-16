@@ -4,7 +4,7 @@
 
 A bunch of stuff I found in an iCloud folder I had lost access to for years. See below for why it exists.
 
-### [Early version of the front-end code for the reader](https://github.com/jkmaxwell/theranos/tree/main/reader/Code%20Archive/UI)
+### [Early version of the front-end code for the reader](https://github.com/jkmaxwell/theranos/tree/main/reader)
 I never said I was a good engineer. 
 
 ### [Business Card Template](https://github.com/jkmaxwell/theranos/tree/main/business_card_template)
